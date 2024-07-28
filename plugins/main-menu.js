@@ -4,59 +4,47 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': 'INFO 📚',
-  'buscador': 'BUSQUEDAS 🔎',
-  'fun': 'JUEGOS 🎮',
-  'jadibot': 'SUB BOTS 🤖',
-  'rpg': 'RPG 🌠',
-  'rg': 'REGISTRO 📁',
+  'main': 'معلومات البوت 📚',
+  'buscador': 'قائمة البحث 🔎',
+  'fun': 'قائمة الألعاب 🎮',
+  'jadibot': 'قائمة نسخ البوت 🤖',
+  'rg': 'قائمة التسجيل 📁',
   'xp': 'EXP 🏷',
-  'sticker': 'STICKERS 🏞',
-  'anime': 'ANIMEA 🍧',
+  'sticker': 'قائمة الملصقات 🏞',
+  'anime': 'قائمة الأنميات 🍧',
   'database': 'DATABASE ✨️',
   'fix': 'FIXMSGESPERA 💭',
-  'grupo': 'GRUPOS 👥',
+  'grupo': 'قائمة المجموعات 👥',
   'nable': 'ON / OFF 📴', 
-  'descargas': 'DESCARGAS 📥',
-  'youtube': 'YOUTUBE PLAY 📥',
-  'tools': 'HERRAMIENTAS 🔧',
-  'info': 'INFORMACIÓN 🐢',
-  'nsfw': 'NSFW 🔞', 
-  'owner': 'CREADOR 👑', 
-  'mods': 'STAFF YAEMORI 🍟',
-  'audio': 'AUDIOS 🔉', 
-  'ai': 'AI 🌹',
-  'transformador': 'CONVERTIDORES 🚩',
+  'descargas': 'قائمة التحميل 📥',
+  'youtube': 'قائمة اليوتيوب 📥',
+  'tools': 'قائمة الأدوات 🔧',
+  'info': 'قائمة المعلومات 🐢',
+  'owner': 'قائمة المالك 👑', 
+  'mods': 'قائمة مساعدين المالك 🍟',
+  'audio': 'قائمة الأصوات 🔉', 
+  'ai': 'قائمة الدكاء الإسطناعي 🌹',
+  'transformador': 'قائمة التحويل 🚩',
 }
 
 const defaultMenu = {
   before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-“ Hola *%name* soy *Ai-Yaemori*, %greeting ”
+“ مرحبا *%name* ”
 
 ╭────═[ *INFO - BOT* ]═─────⋆
 │╭───────────────···
-┴│✯ 🍟 *Bot:* Ai Yaemori - MD 
-✩│✯ 🍂 *Modo* Público
+┴│✯ 🍟 *Bot:* ElvenBot - MD 
+✩│✯ 🍂 *Mod* متاح للجميع
 ✩│✯ ✨️ *Baileys:* Multi Device
-✩│✯ ⌛️ *Tiempo Activo:* %muptime
-┬│✯ 🫂 *Usuarios:* %totalreg
-│╰────────────────···
-╰────────═┅═─────────
-%readmore
-╭────═[ *INFO - USER* ]═─────⋆
-│╭───────────────···
-┴│✯ 🚩 *Cliente:* %name
-✩│✯ 💥 *Exp:* %exp
-✩│✯ 🌟 *Estrellas:* %estrellas
-✩│✯ 🐢 *Nivel:* %level
-┬│✯ ⚓ *Rango:* %role
+✩│✯ ⌛️ *Uptime:* %muptime
+┬│✯ 🫂 *Users:* %totalreg
 │╰────────────────···
 ╰────────═┅═─────────
 %readmore
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ─*
 
-\t*L I S T A  -  D E  -  C O M A N D O S* 
+\t*قائمة الخدمات* 
 `.trimStart(),
       header: '╭───═[ %category ]═────⋆\n│╭───────────────···',
   body: '││ %cmd\n',
@@ -70,7 +58,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
-    let locale = 'es'
+    let locale = 'en'
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
@@ -170,15 +158,8 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
   global.vid = rlink
   const response = await fetch(vid)
   const gif = await response.buffer()
- // const img = imagen1
-
-// await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲𝗹 𝗕𝗼𝘁...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '🍟 ¡Super Bot De WhatsApp!', sourceUrl: redes, thumbnail: icons }}})
-
-// await conn.reply(m.chat, '🍟 Enviando el menú.....', m, rcanal)
 
 await m.react('⭐️') 
-
-//await conn.sendFile(m.chat, imagen1, 'yaemori.jpg', text.trim(), fkontak, null, rcanal)
 
 await conn.sendMessage(
   m.chat,
@@ -188,12 +169,12 @@ await conn.sendMessage(
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: '120363263466636910@newsletter',
-      newsletterName: '『✯ Team Channel Ai Yaemori ✯』',
+      newsletterName: '『✯ Team Channel Elven Bot ✯』',
       serverMessageId: -1,
     },
     forwardingScore: 999,
     externalAdReply: {
-      title: '🍟 Ai Yaemori - MD 🚩',
+      title: '🍟 ElvenBot - MD 🚩',
       body: dev,
       thumbnailUrl: icono,
       sourceUrl: redes,
