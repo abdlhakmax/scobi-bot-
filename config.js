@@ -9,51 +9,47 @@ import moment from 'moment-timezone';
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
-global.botnumber = '212778513302' //Ejemplo: +573218138672
+global.botnumber = '212778513302' //Example 212660131536
 global.confirmCode = ''
 
-//• ↳𝑺𝑶𝑳𝑶 𝑫𝑬𝑺𝑨𝑹𝑹𝑶𝑳𝑳𝑨𝑫𝑶𝑹𝑬𝑺 𝑨𝑷𝑹𝑶𝑩𝑨𝑫𝑶𝑺
+//• ↳ONLY OWNERS AND COLLABORATORS
 global.owner = [
-['212660131536', 'Aymane Touzani', true]
+['212660131536', 'GX004', true]
 ]
 
-//• ↳𝑺𝑶𝑳𝑶 𝑴𝑶𝑫𝑬𝑹𝑨𝑫𝑶𝑹𝑬𝑺!
+//• ↳ONLY MODERATORS!
 global.mods = []
 
 global.suittag = ['212660131536']
 global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packname = '⪛✰ 𝐋𝐮𝐟𝐟𝐲 𝐁𝐨𝐭 - 𝐌𝐃 ✰⪜'
-global.author = 'Oғᴄ.Dɪᴇɢᴏ 👑'
-global.wm = '✨◌*̥₊ LᴜғғʏBᴏᴛ-MD ◌❐⚡༉'
-global.titulowm = 'LuffyBot-MD 🍟'
-global.titulowm2 = 'Ofc.Diego'
+global.packname = '⪛ ElvenBot - 𝐌𝐃 ⪜'
+global.author = 'GX004 👑'
+global.wm = '✨◌*̥₊ ELVENBOT-MD ◌❐⚡༉'
+global.titulowm = 'ElvenBot-MD 🍟'
+global.titulowm2 = 'GX004'
 global.igfg = 'hg_hardy'
-global.botname = 'Lᴜғғʏ Bᴏᴛ - MD 🚩'
-global.dev = '👑 Developed By • ✨ Aymane Touzani'
-global.textbot = '𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁 : Aymane Touzani 🚩'
-global.vs = '2.0.2'
+global.botname = 'ELVENBOT - MD 🚩'
+global.dev = '👑 Developed By • ✨ HardGamers'
+global.textbot = 'ElvenBot : by HardGamers TEAM 🚩'
+global.vs = '1.0.0'
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
-global.imagen1 = fs.readFileSync('./Menu.jpg')
-global.imagen2 = fs.readFileSync('./Menu2.jpg')
-global.imagen3 = fs.readFileSync('./Menu3.jpg')
+global.imagen1 = fs.readFileSync('./Storage/Img/Menu.png')
+global.imagen2 = fs.readFileSync('./Storage/Img/Menu.jpg')
+global.imagen3 = fs.readFileSync('./Storage/Img/Logo.png')
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
-global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Grupo Oficial De Luffy
-global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk' //Grupo Soporte Luffy
-global.gp3 = 'https://chat.whatsapp.com/Ksd32KH9zFoDmO1PJt44M7' //GataBot Y Luffy
-global.gp4 = 'https://chat.whatsapp.com/EVc2XJuZwjnKKdWUsRYmms' //ShizukaBot Y Luffy
-global.gp5 = 'https://chat.whatsapp.com/LZXw8nsXoodGGRN61zRtVG' //Sumi Sakurasawa Y Luffy
-global.comunidad1 = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Comunidad luffy
-global.comunidad2 = 'https://chat.whatsapp.com/GpbF3JCTEr2CSj3zLJ1IQj' //Comunidad de Moonligth
+global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
+global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk' //Support Group
+global.comunidad1 = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Elven Community
 global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' //Canal Oficial
-global.channel2 = 'https://whatsapp.com/channel/0029Vablj8M05MUnustq3q1S' //Canal MoonLight Team 
+global.channel2 = 'https://whatsapp.com/channel/0029Vablj8M05MUnustq3q1S' //Canal Noureddine
 global.yt = 'https://www.youtube.com/@tzaym1' //Canal De Youtube
-global.md = 'https://github.com/OfcDiego/LuffyBot-MD' //Github Oficial
-global.fb = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' //Facebook Del Propietario
-global.tiktok = 'https://tiktok.com/@theluffybot' //Cuenta tiktok
+global.md = 'https://github.com/HardGamersTEAM/ElvenBot-MD' //Github Oficial
+global.fb = 'https://www.facebook.com/gxaymenofcjkg' //Facebook Owner
+global.tiktok = 'https://tiktok.com/@tzaym1' //Cuenta tiktok
 
 //• ↳ ◜𝑻𝑰𝑬𝑴𝑷𝑶◞ • 🕒
 global.d = new Date(new Date + 3600000);
@@ -64,7 +60,7 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nLuffy`;
+global.wm2 = `${dia} ${fecha}\nElven`;
 global.nomorown = '212660131536';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
