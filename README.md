@@ -1,6 +1,6 @@
 > 🚩 Current version : 1.0.0
 
-## **`🍟 Elvan Bot - MD`**
+## **`🍟 Elven Bot - MD`**
 
 ![ElvenBot](https://telegra.ph/file/a7a9798496639ce074237.jpg)
 
