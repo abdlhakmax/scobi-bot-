@@ -7,8 +7,7 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-//BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
-//Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
+//FOR PAIRING USING 8 DIGITS CODE
 global.botnumber = '212778513302' //Example 212660131536
 global.confirmCode = ''
 
@@ -35,12 +34,12 @@ global.dev = '👑 Developed By • ✨ HardGamers'
 global.textbot = 'ElvenBot : by HardGamers TEAM 🚩'
 global.vs = '1.0.0'
 
-//• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
+//• ↳ ◜IMAGES◞ • 🌇
 global.imagen1 = fs.readFileSync('./Storage/Img/Menu.png')
 global.imagen2 = fs.readFileSync('./Storage/Img/Menu.jpg')
 global.imagen3 = fs.readFileSync('./Storage/Img/Logo.png')
 
-//• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
+//• ↳ ◜LINKS◞ • 🌿
 global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
 global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk' //Support Group
 global.comunidad1 = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Elven Community
@@ -51,9 +50,9 @@ global.md = 'https://github.com/HardGamersTEAM/ElvenBot-MD' //Github Oficial
 global.fb = 'https://www.facebook.com/gxaymenofcjkg' //Facebook Owner
 global.tiktok = 'https://tiktok.com/@tzaym1' //Cuenta tiktok
 
-//• ↳ ◜𝑻𝑰𝑬𝑴𝑷𝑶◞ • 🕒
+//• ↳ ◜TIME◞ • 🕒
 global.d = new Date(new Date + 3600000);
-global.locale = 'es';
+global.locale = 'en';
 global.dia = d.toLocaleDateString(locale, {weekday: 'long'});
 global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', year: 'numeric'});
 global.mes = d.toLocaleDateString('es', {month: 'long'});
@@ -89,7 +88,7 @@ global.flaaa = [
 ];
 //* ************************
 
-//• ↳ ◜𝑨𝑷𝑰𝑺 𝑭𝑼𝑵𝑪𝑰𝑶𝑵◞ 👑
+//• ↳ ◜APIS FUNCTIONS◞ 👑
 global.openai_org_id = 'org-3';
 global.openai_key = 'sk-0';
 global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f'];
