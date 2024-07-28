@@ -12,7 +12,7 @@
 
 [`🚩 Click here to download termux`](https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file)
 
-> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+> ENTER THIS COMMANDS ONE AFTER ONE:
 
 ```bash
 termux-setup-storage
@@ -21,7 +21,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/OfcDiego/LuffyBot-MD && cd LuffyBot-MD
+git clone https://github.com/HardGamersTEAM/ElvenBot-MD && cd ElvenBot-MD
 ```
 ```bash
 yarn install && npm install
@@ -31,24 +31,29 @@ npm start
 ```
 
 🍟 **`ACTIVATE THE BOT ON TERMUX`**
-```bash
+
 ENTER THIS COMMANDS ONE AFTER ONE:
-> cd 
-> cd ElvenBot-MD
-> npm start
+```bash
+cd
+```
+```bash
+cd ElvenBot-MD
+```
+```bash
+npm start
 ```
 
 🚩 **`Scan QR Code`**
 ```bash
 ENTER THIS COMMANDS ONE AFTER ONE:
-> cd LuffyBot-MD
-> rm -rf LuffySession
+> cd ElvenBot-MD
+> rm -rf Storage/Session
 > npm start
 ```
 
 🍟 **`ELVEN 24/7 (TERMUX)`**
 ```bash
-> termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
+termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ```
 
 🚩 **`ACTUALIZAR LUFFY`**
