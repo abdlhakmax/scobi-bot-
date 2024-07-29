@@ -44,7 +44,7 @@ global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial 
 global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk' //Support Group
 global.community = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Elven Community
 global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' //Channel OFC
-global.md = 'https://github.com/HardGamersTEAM/ElvenBot-MD' //Github Oficial
+global.md = 'https://github.com/GX004/ElvenBot-MD' //Github Oficial
 
 //• ↳ ◜TIME◞ • 🕒
 global.d = new Date(new Date + 3600000);
