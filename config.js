@@ -29,30 +29,26 @@ global.wm = '✨◌*̥₊ ELVENBOT-MD ◌❐⚡༉'
 global.titulowm = 'ElvenBot-MD 🍟'
 global.titulowm2 = 'GX004'
 global.igfg = 'hg_hardy'
-global.botname = 'ELVENBOT - MD 🚩'
-global.dev = '👑 Developed By • ✨ HardGamers'
-global.textbot = 'ElvenBot : by HardGamers TEAM 🚩'
+global.botname = 'ElvenBot - MD 🚩'
+global.dev = '👑 '
+global.textbot = '© 2024, by HardGamers 🚩'
 global.vs = '1.0.0'
 
 //• ↳ ◜IMAGES◞ • 🌇
-global.imagen1 = fs.readFileSync('./Storage/Img/Menu.png')
-global.imagen2 = fs.readFileSync('./Storage/Img/Menu.jpg')
-global.imagen3 = fs.readFileSync('./Storage/Img/Logo.png')
+global.image1 = fs.readFileSync('./media/img/menu.png')
+global.image2 = fs.readFileSync('./media/img/menu.jpg')
+global.image3 = fs.readFileSync('./media/img/logo.png')
 
 //• ↳ ◜LINKS◞ • 🌿
 global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
 global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk' //Support Group
-global.comunidad1 = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Elven Community
-global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' //Canal Oficial
-global.channel2 = 'https://whatsapp.com/channel/0029Vablj8M05MUnustq3q1S' //Canal Noureddine
-global.yt = 'https://www.youtube.com/@tzaym1' //Canal De Youtube
+global.community = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Elven Community
+global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' //Channel OFC
 global.md = 'https://github.com/HardGamersTEAM/ElvenBot-MD' //Github Oficial
-global.fb = 'https://www.facebook.com/gxaymenofcjkg' //Facebook Owner
-global.tiktok = 'https://tiktok.com/@tzaym1' //Cuenta tiktok
 
 //• ↳ ◜TIME◞ • 🕒
 global.d = new Date(new Date + 3600000);
-global.locale = 'en';
+global.locale = 'es';
 global.dia = d.toLocaleDateString(locale, {weekday: 'long'});
 global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', year: 'numeric'});
 global.mes = d.toLocaleDateString('es', {month: 'long'});
@@ -125,7 +121,7 @@ global.APIKeys = {
   'https://api.lolhuman.xyz': 'GataDios',
   'https://api.neoxr.my.id': `${keysneoxr}`,
   'https://api.zahwazein.xyz': `${keysxxx}`,
-  'https://api-fgmods.ddns.net': 'fg-dylux',
+  'https://api.fgmods.xyz': 'fg-dylux',
   'https://api.botcahx.biz.id': 'Admin',
   'https://api.ibeng.tech/docs': 'tamvan',
   'https://api.itsrose.site': 'Rs-Zeltoria',
@@ -144,35 +140,35 @@ global.rpg = {
     string = string.toLowerCase();
     const emot = {
       level: '🧬 Nivel',
-      estrellas: '🌟 Estrella',
-      exp: '⚡ Experiencia',
-      bank: '🏦 Banco',
-      diamond: '💎 Diamante',
-      health: '❤️ Salud',
-      kyubi: '🌀 Magia',
+      estrellas: '🌟 Stars',
+      exp: '⚡ Exp',
+      bank: '🏦 Bank',
+      diamond: '💎 Diamond',
+      health: '❤️ Health',
+      kyubi: '🌀 Kyubi',
       joincount: '💰 Token',
-      emerald: '💚 Esmeralda',
-      stamina: '✨ Energía',
-      role: '💪 Rango',
+      emerald: '💚 Emirald',
+      stamina: '✨ Stamina',
+      role: '💪 Role',
       premium: '🎟️ Premium',
-      pointxp: '📧 Puntos Exp',
-      gold: '👑 Oro',
-      trash: '🗑 Basura',
-      crystal: '🔮 Cristal',
-      intelligence: '🧠 Inteligencia',
-      string: '🕸️ Cuerda',
-      keygold: '🔑 Llave de Oro',
-      keyiron: '🗝️ Llave de Hierro',
-      emas: '🪅 Piñata',
-      fishingrod: '🎣 Caña de Pescar',
-      gems: '🍀 Gemas',
-      magicwand: '⚕️ Varita Mágica',
-      mana: '🪄 Hechizo',
-      agility: '🤸‍♂️ Agilidad',
-      darkcrystal: '♠️ Cristal Oscuro',
-      iron: '⛓️ Hierro',
-      rock: '🪨 Roca',
-      potion: '🥤 Poción',
+      pointxp: '📧 Points Exp',
+      gold: '👑 Gold',
+      trash: '🗑 Trash',
+      crystal: '🔮 Crystal',
+      intelligence: '🧠 Intelligence',
+      string: '🕸️ String',
+      keygold: '🔑 Gold Key',
+      keyiron: '🗝️ Iron Key',
+      emas: '🪅 Emas',
+      fishingrod: '🎣 Fishing Rod',
+      gems: '🍀 Gems',
+      magicwand: '⚕️ Magic Wand',
+      mana: '🪄 Mana',
+      agility: '🤸‍♂️ Agility',
+      darkcrystal: '♠️ Crystal Dark',
+      iron: '⛓️ Iron',
+      rock: '🪨 Rock',
+      potion: '🥤 Potion',
       superior: '💼 Superior',
       robo: '🚔 Robo',
       upgrader: '🧰 Aumentar Mejora',
