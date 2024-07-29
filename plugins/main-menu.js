@@ -1,3 +1,4 @@
+/*
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
@@ -274,7 +275,7 @@ function capitalize(word) {
 
 
 
-/*
+*/
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
@@ -305,21 +306,17 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
-
-“ مرحبا *%name* ”
+  before: `“ مرحبا *%name* ”
 
 ╭────═[ *INFO - BOT* ]═─────⋆
 │╭───────────────···
 ┴│✯ 🍟 *Bot:* ElvenBot - MD 
-✩│✯ 🍂 *Mod* متاح للجميع
 ✩│✯ ✨️ *Baileys:* Multi Device
 ✩│✯ ⌛️ *Uptime:* %muptime
 ┬│✯ 🫂 *Users:* %totalreg
 │╰────────────────···
 ╰────────═┅═─────────
 %readmore
-*─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ─*
 
 \t*قائمة الخدمات* 
 `.trimStart(),
@@ -500,4 +497,4 @@ switch(hour){
   case 23: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
 }
   var greeting = hour;
-  */
+ 
