@@ -99,20 +99,21 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 
 > Bot en creación pronto se agregaran más cosas 
 
-- [x] Interacción con voz y texto
-- [x] Configuración de grupo
-- [x] antidelete, antilink, antispam, etc
-- [x] Bienvenida personalizada
-- [x] Juegos, tictactoe, mate, etc
+
+- [x] Interaction with voice and text
+- [x] Group Settings
+- [x] antidelete, antilink, antispam, etc.
+- [x] Personalized welcome
+- [x] Games, tictactoe, mate, etc.
 - [x] Chatbot (simsimi)
 - [ ] Chatbot (modoia)
 - [x] Create sticker of image/video/gif/url
 - [x] SubBot (Jadibot)
 - [ ] Search Google
 - [x] Play RPG
-- [ ] Personalizar imagen del menú
-- [x] Descarga de música y video De YT
-- [ ] Otros
+- [ ] Customize menu image
+- [x] Music and Video Download From YT
+- [ ] Others
 
 --- 
 
