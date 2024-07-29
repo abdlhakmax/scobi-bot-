@@ -34,9 +34,9 @@ const defaultMenu = {
 
 \t*قائمة الخدمات* 
 `.trimStart(),
-      header: '\n</ %category >\n\n  ╭───── • ◆ • ─────╮',
-  body: '  ├❧ _%cmd_\n',
-  footer: '  ╰───── • ◆ • ─────╯',
+      header: '\n</ %category >\n\n╭───── • ◆ • ─────╮',
+  body: '├❧ _%cmd_\n',
+  footer: '╰───── • ◆ • ─────╯',
   after: `> ${dev}`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
