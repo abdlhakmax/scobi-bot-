@@ -159,7 +159,7 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
   const response = await fetch(vid)
   const gif = await response.buffer()
 
-await m.react('⭐️') 
+await m.react('📋') 
 
 await conn.sendMessage(
   m.chat,
@@ -167,20 +167,7 @@ await conn.sendMessage(
   contextInfo: {
     mentionedJid: [m.sender],
     isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363263466636910@newsletter',
-      newsletterName: '『✯ Team Channel Elven Bot ✯』',
-      serverMessageId: -1,
-    },
     forwardingScore: 999,
-    externalAdReply: {
-      title: '🍟 ElvenBot - MD 🚩',
-      body: dev,
-      thumbnailUrl: icono,
-      sourceUrl: redes,
-      mediaType: 1,
-      renderLargerThumbnail: false,
-    },
   },
 
   gifPlayback: true, gifAttribution: 0 },
