@@ -2,7 +2,7 @@
 
 ## **`🍟 Elven Bot - MD`**
 
-![ElvenBot](https://telegra.ph/file/a7a9798496639ce074237.jpg)
+![ElvenBot](https://i.ibb.co/HGqYPbf/logo-color.png)
 
 ---
 
