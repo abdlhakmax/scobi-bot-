@@ -76,18 +76,18 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
 
-#### 🟢 ACTIVAR EN CODES SPACES 
-[`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=HardGamersTEAM/ElvenBot-MD&ref=main&geo=UsEast)
+#### 🟢 ACTIVATE ON CODESPACES
+[`CREATE SERVER`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=HardGamersTEAM/ElvenBot-MD&ref=main&geo=UsEast)
 
-#### ⚡ ACRIVAR EN REPLIT
-[![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/HardGamersTEAM/ElvenBot-MD)](https://repl.it/github/HardGamersTEAM/ElvenBot-MD)
+#### ⚡ ACRIVATE ON REPLIT
+[![`CREATE SERVER ON REPLIT`](https://repl.it/badge/github/HardGamersTEAM/ElvenBot-MD)](https://repl.it/github/HardGamersTEAM/ElvenBot-MD)
 
 #### 🤍 ACTIVATE ON RENDER
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2HardGamersTEAM%ElvenBot-MD) 
 
 ---
 
-## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
+## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Group" width="45" height="43"> Bot Oficial ☄️
 
 <a href="https://wa.me/212774265928?text=!menu"><img alt="Bot Oficial ☄️" src="https://img.shields.io/badge/Bot - Oficial-00FFFF?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
@@ -95,32 +95,27 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 
 ---
 
-## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="Características" width="42" height="42"> Características
+## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="characteristics" width="42" height="42"> characteristics
 
-> Bot en creación pronto se agregaran más cosas 
+> Bot en creación pronto se agregaran más cosas  
 
 
-- [x] Interaction with voice and text
-- [x] Group Settings
-- [x] antidelete, antilink, antispam, etc.
-- [x] Personalized welcome
-- [x] Games, tictactoe, mate, etc.
-- [x] Chatbot (simsimi)
+- [ ] Interaction with voice and text
+- [ ] Group Settings
+- [ ] antidelete, antilink, antispam, etc.
+- [ ] Personalized welcome
+- [ ] Games, tictactoe, mate, etc.
+- [ ] Chatbot (simsimi)
 - [ ] Chatbot (modoia)
-- [x] Create sticker of image/video/gif/url
-- [x] SubBot (Jadibot)
+- [ ] Create sticker of image/video/gif/url
+- [ ] SubBot (Jadibot)
 - [ ] Search Google
-- [x] Play RPG
+- [ ] Play RPG
 - [ ] Customize menu image
-- [x] Music and Video Download From YT
+- [ ] Music and Video Download From YT
 - [ ] Others
 
 --- 
-
-### `🚩 DESARROLLADORES`
-<a href="https://github.com/HardGamersTEAM/ElvenBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=HardGamersTEAM/ElvenBot-MD" /> 
-</a>
 
 ### `✨️ THANK'S TO`
 <a
