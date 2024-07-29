@@ -97,7 +97,7 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 
 ## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="characteristics" width="42" height="42"> characteristics
 
-> Bot en creación pronto se agregaran más cosas  
+> Bot in creation more things will be added soon  
 
 
 - [ ] Interaction with voice and text
@@ -127,4 +127,4 @@ href="https://github.com/GX004"><img src="https://github.com/GX004.png" width="1
 
 > Copyright (c) 2024 **[GX004](https://github.com/HardGamersTEAM/ElvenBot-MD)**.
 
-**`¡GRACIAS POR PREFERIRNOS!` 🍟**
+**`THANKS FOR CHOOSING US!` 🍟**
