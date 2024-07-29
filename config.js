@@ -35,9 +35,9 @@ global.textbot = '© 2024, by HardGamers 🚩'
 global.vs = '1.0.0'
 
 //• ↳ ◜IMAGES◞ • 🌇
-global.image1 = fs.readFileSync('./media/img/menu.png')
-global.image2 = fs.readFileSync('./media/img/menu.jpg')
-global.image3 = fs.readFileSync('./media/img/logo.png')
+global.image1 = fs.readFileSync('./media/img/logo.png')
+global.image2 = fs.readFileSync('./media/img/logo2.png')
+global.image3 = fs.readFileSync('./media/img/logo3.png')
 
 //• ↳ ◜LINKS◞ • 🌿
 global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
