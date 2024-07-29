@@ -2,7 +2,7 @@
   # * Al bifurcar este repositorio, dejen los créditos a todos los creadores de cada código por favor. ♥
 #!/data/data/com.termux/files/usr/bin/bash 
 BOT_DIR="ElvenBot-MD"  
-BOT_REPO="https://github.com/HardGamersTEAM/$BOT_DIR"
+BOT_REPO="https://github.com/GX004/$BOT_DIR"
 DB_FILE="database.json"
 
 GREEN='\033[32m'
