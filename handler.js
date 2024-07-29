@@ -157,7 +157,7 @@ global.db.data.chats[m.chat] = {}
 
 if (chat) {
 if (!('isBanned' in chat)) chat.isBanned = false         
-if (!('welcome' in chat)) chat.welcome = true           
+if (!('welcome' in chat)) chat.welcome = false           
 if (!('detect' in chat)) chat.detect = true               
 if (!('sWelcome' in chat)) chat.sWelcome = ''          
 if (!('sBye' in chat)) chat.sBye = ''                    
@@ -193,7 +193,7 @@ if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
 isBanned: false,
-welcome: true,
+welcome: false,
 detect: true,
 sWelcome: '',
 sBye: '',
@@ -239,7 +239,7 @@ if (!('antiCall' in settings)) settings.antiCall = true
 if (!('antiSpam' in settings)) settings.antiSpam = true
 if (!('modoia' in settings)) settings.modoia = false
 if (!('jadibotmd' in settings)) settings.jadibotmd = false  
-if (!('autobio' in settings)) settings.autobio = false
+if (!('autobio' in settings)) settings.autobio = true
 } else global.db.data.settings[this.user.jid] = {
 self: false,
 autoread: false,
@@ -250,7 +250,7 @@ antiCall: true,
 antiSpam: true,
 modoia: false, 
 jadibotmd: true,
-autobio: false,
+autobio: true,
 }} catch (e) {
 console.error(e)
 }
@@ -315,7 +315,7 @@ console.error(e)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`⧋〘📕 FORMATO ERRONEO 📕〙⧋\n\n❒ 𝗘𝗥𝗥𝗢𝗥:\n\`\`\`${format(e)}\`\`\`\n`.trim(), data.jid)
+m.reply(`❒ 𝗘𝗥𝗥𝗢𝗥:\n\`\`\`${format(e)}\`\`\`\n`.trim(), data.jid)
 }}}
 if (!opts['restrict'])
 if (plugin.tags && plugin.tags.includes('admin')) {
@@ -451,19 +451,19 @@ if (xp > 2000)
 m.reply('Exp limit') 
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-conn.reply(m.chat, `❮💰❯ 𝗡𝗼 𝘁𝗶𝗲𝗻𝗲𝘀 𝘀𝘂𝗳𝗶𝗰𝗶𝗲𝗻𝘁𝗲𝘀 𝗟𝘂𝗳𝗳𝘆𝗖𝗼𝗶𝗻𝘀 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼.`, m, rcanal)       
+conn.reply(m.chat, `❮💰❯ Not enough coins to use this command.`, m, rcanal)       
 continue     
 }
 
 m.exp += xp
 if (!isPrems && plugin.estrellas && global.db.data.users[m.sender].estrellas < plugin.estrellas * 1) {
-conn.reply(m.chat, `❮🌟❯ 𝗡𝗼 𝘁𝗶𝗲𝗻𝗲𝘀 𝘀𝘂𝗳𝗶𝗰𝗶𝗲𝗻𝘁𝗲𝘀 𝗘𝘀𝘁𝗿𝗲𝗹𝗹𝗮𝘀 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼. 𝗣𝗮𝗿𝗮 𝗰𝗼𝗺𝗽𝗿𝗮𝗿 𝗺𝗮𝘀 𝗘𝘀𝘁𝗿𝗲𝗹𝗹𝗮𝘀, 𝘂𝘀𝗲 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼.\n\n• 𝗣𝗼𝗿 𝗘𝗷𝗲𝗺𝗽𝗹𝗼:\n\n*${usedPrefix}buyall*\n*${usedPrefix}buy*`, m, rcanal) 
+conn.reply(m.chat, `❮🌟❯ Not enough stars to use this command. To buy stars, Use this command.\n\n• Example:\n\n*${usedPrefix}buyall*\n*${usedPrefix}buy*`, m, rcanal) 
 continue
 }
 
 
 if (plugin.level > _user.level) {
-conn.reply(m.chat, `❮📣❯ 𝗥𝗲𝗾𝘂𝗶𝗲𝗿𝗲 𝗲𝗹 𝗻𝗶𝘃𝗲𝗹: *${plugin.level}*\n\n• 𝗧𝘂 𝗻𝗶𝘃𝗲𝗹 𝗮𝗰𝘁𝘂𝗮𝗹 𝗲𝘀: *${_user.level}*\n\n• 𝗨𝘀𝗮 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼 𝗽𝗮𝗿𝗮 𝘀𝘂𝗯𝗶𝗿 𝗱𝗲 𝗻𝗶𝘃𝗲𝗹:\n*${usedPrefix}levelup*`, m, rcanal)       
+conn.reply(m.chat, `❮📣❯ المستوى المطلوب: *${plugin.level}*\n\n• مستواك الحالي: *${_user.level}*\n\n• استخدم هذه الخاصية:\n*${usedPrefix}levelup*`, m, rcanal)       
 continue
 }
 let extra = {
@@ -506,7 +506,7 @@ if (e.name)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`⧋〘📕 𝗘𝗥𝗥𝗢𝗥 │ 𝗙𝗔𝗟𝗟𝗢 📕〙⧋\n\n❒ 𝗘𝗥𝗥𝗢𝗥:\n\`\`\`${format(e)}\`\`\`\n`.trim(), data.jid)
+m.reply(`⧋〘📕 𝗘𝗥𝗥𝗢𝗥 📕〙⧋\n\n❒ 𝗘𝗥𝗥𝗢𝗥:\n\`\`\`${format(e)}\`\`\`\n`.trim(), data.jid)
 }
 m.reply(text)
 }} finally {
@@ -518,10 +518,10 @@ await plugin.after.call(this, m, extra)
 console.error(e)
 }}
 if (m.estrellas)
-conn.reply(m.chat, `Utilizaste *${+m.estrellas}* 🌟`, m, rcanal)
+conn.reply(m.chat, `تم استخدام *${+m.estrellas}* 🌟`, m, rcanal)
 }
 if (m.money)
-conn.reply(m.chat, `Utilizaste *${+m.money}* 💰`, m, rcanal)
+conn.reply(m.chat, `تم استخدام *${+m.money}* 💰`, m, rcanal)
 break
 }}} catch (e) {
 console.error(e)
@@ -615,7 +615,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@date', global.botdate).replace('@time', global.bottime).replace('@readMore', global.readMore).replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁-𝗠𝗗\n𝗦𝗶𝗻 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼𝗻') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@date', global.botdate).replace('@time', global.bottime).replace('@readMore', global.readMore).replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'ElvenBot-MD\nNo Description') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]).replace('@date', global.botdate).replace('@time', global.bottime)
 
 if (chat.antifake && isBotAdminNn && action === 'add') {
@@ -641,7 +641,7 @@ let responseb = await conn.groupParticipantsUpdate(id, [user], 'remove')
 if (responseb[0].status === "404") return      
 }}
 
-let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
+let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Hello" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
 this.sendMessage(id, { text: text, 
 contextInfo:{
 forwardingScore: 9999999,
@@ -717,11 +717,11 @@ if (!chat?.delete) return
 if (!msg) return 
 if (!msg?.isGroup) return 
 const antideleteMessage = `╭•┈•〘❌ 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 ❌〙•┈• ◊
-│❒ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢:
+│❒ USER:
 │• @${participant.split`@`[0]}
 │
-│❒ 𝗔𝗰𝗮𝗯𝗮 𝗱𝗲 𝗲𝗹𝗶𝗺𝗶𝗻𝗮𝗿 𝘂𝗻 𝗺𝗲𝗻𝘀𝗮𝗷𝗲
-│𝗿𝗲𝗲𝗻𝘃𝗶𝗮𝗻𝗱𝗼... ⏱️
+│❒ Removed a message
+│Resending... ⏱️
 ╰•┈•〘❌ 𝗔𝗡𝗧𝗜 𝗗𝗘𝗟𝗘𝗧𝗘 ❌〙•┈• ◊`.trim();
 await this.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
@@ -731,15 +731,15 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 const msg = {
-rowner: '「👑」 *Esta función solo puede ser usada por mi creador*\n\n> OfcDiego.', 
-owner: '「👑」 *Esta función solo puede ser usada por mi desarrollador.', 
-mods: '「🤴🏻」 *Esta función solo puede ser usada por mis desarrolladores.*', 
-premium: '「🍧」 *Esta función solo es para usuarios Premium.', 
-group: '「🐢」 *Esta funcion solo puede ser ejecutada en grupos.*', 
-private: '「🍭」 *Esta función solo puede ser usada en chat privado.*', 
-admin: '「👑」 *Este comando solo puede ser usado por admins.*', 
-botAdmin: '「🚩」 *Para usar esta función debo ser admin.*', 
-unreg: '「🍟」 *¡Hey! no estas registrado, registrese para usar esta función*\n\n*/reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Luffy.666*',
+rowner: '「👑」 *لا يمكن استخدام هذه الخاصية إلا من طرف مالك البوت*.', 
+owner: '「👑」 *لا يمكن استخدام هذه الخاصية إلا من طرف مساعد المالك*.', 
+mods: '「🤴🏻」 *لا يمكن استخدام هذه الخاصية إلا من طرف مساعد المالك*.', 
+premium: '「🍧」 *لا يمكن استخدام هذه الخاصية إلا من طرف الشخصيات المميزة*.', 
+group: '「🐢」 *لا يمكن استخدام هذه الخاصية في الدردشة الخاصة. يرجى استخدامها في المجموعات*.', 
+private: '「🍭」 *لا يمكن استخدام هذه الخاصية في المجموعات. يرجى استخدامها في الدردشة الخاصة*.', 
+admin: '「👑」 *لا يمكن استخدام هذه الخاصية إلا من طرف المشرفين*.', 
+botAdmin: '「🚩」 *لإستخدام هذه الخاصية يجب ان تضعني مشرفا للمجموعة.*', 
+unreg: '「🍟」 *يجب عليك التسجيل في البوت للتمكن من استخدام هذه الخاصية*\n\n*/reg smytk.3mrk*\n\n*_❕ Mital_* : */reg Aymane.20*',
 restrict: '「💫」 *Esta característica esta desactivada.*'
 }[type];
 if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))}
@@ -748,7 +748,7 @@ const file = global.__filename(import.meta.url, true);
 // NO TOCAR
 watchFile(file, async () => {
 unwatchFile(file);
-console.log(chalk.green('Actualizando "handler.js"'));
+console.log(chalk.green('Updating "handler.js"'));
 if (global.reloadHandler) console.log(await global.reloadHandler());
 
 if (global.conns && global.conns.length > 0 ) {
