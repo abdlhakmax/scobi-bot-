@@ -21,7 +21,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/HardGamersTEAM/ElvenBot-MD && cd ElvenBot-MD
+git clone https://github.com/GX004/ElvenBot-MD && cd ElvenBot-MD
 ```
 ```bash
 yarn install && npm install
@@ -59,7 +59,7 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 🚩 **`ACTUALIZAR LUFFY`**
 > Note : This command to update Elven - MD 
 ```bash
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/LuffyBot-MD/master/update.sh | bash
+grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/GX004/ElvenBot-MD/master/update.sh | bash
 ```
 
 > Warning Estos comandos solo funcionan para TERMUX, REPLIT, LINUX
