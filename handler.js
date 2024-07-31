@@ -7,7 +7,7 @@ import {unwatchFile, watchFile} from 'fs';
 import fs from 'fs';
 import chalk from 'chalk';
 import ws from 'ws';
-import './plugins/main-allfake.js'
+import './plugins/_allfake.js'
 
 /**
  * @type {import('@adiwajshing/baileys')}  
