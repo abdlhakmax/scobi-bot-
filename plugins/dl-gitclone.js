@@ -4,7 +4,7 @@ const handler = async (m, {args, usedPrefix, command}) => {
   if (!args[0]) throw `  *يرجى وضع الرابط بعد الخاصية.*
  مثال:
 ${usedPrefix + command} https://github.com/GX004/ElvenBot-MD`;
-  if (!regex.test(args[0])) throw '*📍 Link Incorrecto!*';
+  if (!regex.test(args[0])) throw '*📍 الرابط غير موجود!*';
   let [_, user, repo] = args[0].match(regex) || [];
   repo = repo.replace(/.git$/, '');
   const url = `https://api.github.com/repos/${user}/${repo}/zipball`;
