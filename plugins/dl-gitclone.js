@@ -13,7 +13,7 @@ ${usedPrefix + command} https://github.com/GX004/ElvenBot-MD`;
   conn.sendFile(m.chat, url, filename, null, m);
 };
 handler.help = ['gitclone <url>'];
-handler.tags = ['downloader'];
+handler.tags = ['download'];
 handler.command = /gitclone/i;
 handler.register = true
 export default handler;
