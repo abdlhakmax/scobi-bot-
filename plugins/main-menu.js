@@ -6,15 +6,14 @@ import { xpRange } from '../lib/levelling.js'
 let tags = {
   'main': 'القائمة الرئيسية',
   'buscador': 'قائمة البحث',
-  'jadibot': 'البوتات المستنسخة',
-  'sticker': 'الملصقات',
+  'download': 'قائمة التحميل',
+  'ai': 'الدكاء الإسطناعي',
   'group': 'المجموعات',
   'nable': 'التعديل', 
-  'downloads': 'التحميل',
   'tools': 'الأدوات',
   'info': 'المعلومات',
   'owner': 'المالك', 
-  'ai': 'الدكاء الإسطناعي',
+  'sticker': 'الملصقات',
   'convert': 'التحويل',
 }
 
@@ -34,7 +33,7 @@ const defaultMenu = {
       header: '\n</ %category >\n\n╭───── • ◆ • ─────╮',
   body: '├❧ _%cmd_\n',
   footer: '╰───── • ◆ • ─────╯',
-  after: `> ${dev}`,
+  after: `\n> © 2024 • By GX004`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
