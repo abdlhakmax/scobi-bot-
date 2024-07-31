@@ -5,7 +5,7 @@ import { xpRange } from '../lib/levelling.js'
 
 let tags = {
   'main': 'القائمة الرئيسية',
-  'buscador': 'قائمة البحث',
+  'search': 'قائمة البحث',
   'download': 'قائمة التحميل',
   'ai': 'الدكاء الإسطناعي',
   'group': 'المجموعات',
