@@ -35,9 +35,9 @@ global.textbot = '© 2024, by HardGamers 🚩'
 global.vs = '1.0.0'
 
 //• ↳ ◜IMAGES◞ • 🌇
-global.image1 = fs.readFileSync('./media/img/logo.png')
-global.image2 = fs.readFileSync('./media/img/logo2.png')
-global.image3 = fs.readFileSync('./media/img/logo3.png')
+global.image1 = fs.readFileSync('./elven/img/logo.png')
+global.image2 = fs.readFileSync('./elven/img/logo2.png')
+global.image3 = fs.readFileSync('./elven/img/logo3.png')
 
 //• ↳ ◜LINKS◞ • 🌿
 global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
@@ -73,7 +73,7 @@ global.comienzo = '• • ◕◕════';
 global.fin = '════◕◕ • •';
 global.botdate = `${moment.tz('Africa/Casablanca').format('DD/MM/YY')}`;
 global.bottime = `${moment.tz('Africa/Casablanca').format('HH:mm:ss')}`;
-global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./media/img/logo.png')}}};
+global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./elven/img/logo.png')}}};
 global.multiplier = 99;
 global.flaaa = [
   'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
