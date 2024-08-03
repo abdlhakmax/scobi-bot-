@@ -9,6 +9,6 @@ await m.reply(update.toString())
 }}
 handler.help = ['update']
 handler.tags = ['owner']
-handler.command = /^update|تحديث$/i
+handler.command = /^update$/i
 handler.rowner = true
 module.exports = handler
