@@ -6,7 +6,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   let mime = (q.msg || q).mimetype || q.mediaType || "";
   if (!mime) throw `*🍭 يرجى ارسال صورة و الرد عليها ب هذه الخاصية\n!hd*`;
   if (!/image\/(jpe?g|png)/.test(mime)) throw `*🚩 نوع الملف (${mime}) غير مقبول, يرجى الرد على صورة*`;
-  m.reply("⏰️ Espere Un Momento");
+  m.reply("⏰️ جاري تحسين الصورة");
   let img = await q.download?.();
   let pr = await remini(img, "enhance");
   conn.sendMessage(m.chat, {image: pr}, {quoted: m});
