@@ -10,9 +10,7 @@ let tags = {
   'ai': 'الدكاء الإسطناعي', 
   'tools': 'الأدوات',
   'info': 'المعلومات',
-  'owner': 'المالك', 
-  'sticker': 'الملصقات',
-  'convert': 'التحويل',
+  'owner': 'المالك',
 }
 
 const defaultMenu = {
