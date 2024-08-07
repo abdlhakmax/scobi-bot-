@@ -14,8 +14,8 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   throw "*⚡️ حدث خطأ ما*";
  }
 };
-handler.help = ["remini", "hd", "enhance"];
-handler.tags = ["ai", "tools"];
+handler.help = ["hd"];
+handler.tags = ["tools"];
 handler.command = ["remini", "hd", "enhance"];
 export default handler;
 
