@@ -38,9 +38,9 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 
 };
 
-handler.command = /^(pair)$/i;
+handler.command = /^(paircode)$/i;
 
-handler.help = ['pair'];
+handler.help = ['paircode'];
 
 handler.tags = ['tools'];
 
