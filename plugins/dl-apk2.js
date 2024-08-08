@@ -60,8 +60,8 @@ var handler = async (m, {conn, usedPrefix, command, text}) => {
 };
 
 handler.tags = ['download']
-handler.help = ['apk']
-handler.command = ['apk']
+handler.help = ['apk2']
+handler.command = ['apk2']
 handler.register = false
 
 export default handler
