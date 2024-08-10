@@ -36,8 +36,8 @@ global.vs = '1.0.0'
 
 //• ↳ ◜IMAGES◞ • 🌇
 global.image1 = fs.readFileSync('./elven/img/logo.png')
-global.image2 = fs.readFileSync('./elven/img/logo2.png')
-global.image3 = fs.readFileSync('./elven/img/logo3.png')
+global.image2 = fs.readFileSync('./elven/img/logo.png')
+global.image3 = fs.readFileSync('./elven/img/logo.png')
 
 //• ↳ ◜LINKS◞ • 🌿
 global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
