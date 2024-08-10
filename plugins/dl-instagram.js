@@ -16,8 +16,6 @@ conn.reply(m.chat, '🚩 حدث خطأ ما.', m, fake)}}
 
 handler.command = ['instagram', 'ig']
 handler.tags = ['download']
-handler.help = ['instagram', 'ig']
-handler.estrellas = 1
-handler.register = false
+handler.help = ['ig']
 
 export default handler
