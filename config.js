@@ -41,9 +41,9 @@ global.image3 = fs.readFileSync('./elven/img/logo.png')
 
 //• ↳ ◜LINKS◞ • 🌿
 global.gp1 = 'https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS' //Group Oficial of ElvenBot
-global.gp2 = 'https://chat.whatsapp.com/KNhfEDUTcyl5RuwR1Is4Hk' //Support Group
-global.community = 'https://chat.whatsapp.com/CZf260qI6Wy0IMBBP5yO15' //Elven Community
-global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' //Channel OFC
+global.gp2 = 'https://chat.whatsapp.com/GwFQwEQXLDGIacY0LwDKuq' //Support Group
+global.community = 'https://whatsapp.com/channel/0029VakwxNe0QeatQGnotN1Q' //Elven Community
+global.channel = 'https://whatsapp.com/channel/0029VakwxNe0QeatQGnotN1Q' //Channel OFC
 global.md = 'https://github.com/GX004/ElvenBot-MD' //Github Oficial
 
 //• ↳ ◜TIME◞ • 🕒
