@@ -9,8 +9,7 @@ conn.reply(m.chat, `🕒 *جاري التحميل...*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
-previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
+previewType: 0, thumbnail: icons }}})
 await m.react(rwait)
 res = await igdl(args[0])
 } catch {
