@@ -63,13 +63,13 @@ global.waittt = '🕒 *Charging, wait a moment ...*';
 global.waitttt = '🕒 *Charging, wait a moment ...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'  
-var git = 'https://github.com/HardGamersTEAM' 
+var canal = 'https://whatsapp.com/channel/0029VakwxNe0QeatQGnotN1Q'  
+var git = 'https://github.com/GX004' 
 var youtube = 'https://www.youtube.com/@tzaym1' 
-var github = 'https://github.com/HardGamersTEAM/ElvenBot-MD' 
+var github = 'https://github.com/GX004/ElvenBot-MD' 
 var facebook = 'https://www.facebook.com/gxaymenofcjkg' 
 let tiktok = 'https://tiktok.com/@tzaym1'
-let correo = 'gxaymenofc@gmail.com'
+let correo = 'gxhostofc@gmail.com'
 
 global.redes = [canal, git, youtube, github, facebook, tiktok, correo].getRandom()
 
