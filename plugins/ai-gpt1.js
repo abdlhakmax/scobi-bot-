@@ -38,9 +38,9 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 
 };
 
-handler.command = /^(gpt)$/i;
+handler.command = /^(ai)$/i;
 
-handler.help = ['gpt'];
+handler.help = ['ai'];
 
 handler.tags = ['ai'];
 
