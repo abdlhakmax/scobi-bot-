@@ -35,14 +35,14 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 global.creador = 'Wa.me/212660131536'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/212660131536'
-global.namechannel = '『✯ Team Channel Elven Bot ✯』'
-global.namechannel2 = 'Noureddine Channel'
-global.namegrupo = 'Elven Group'
-global.namecomu = 'Hard Gamers Community'
-global.namecomu2 = 'Hardy Bot Community'
-global.colab1 = 'Hardy Bot'
-global.colab2 = 'Silana Bot'
-global.colab3 = 'Group Elven Bot'
+global.namechannel = '『 ElvenBot - MD • Official Channel 』'
+global.namechannel2 = '『 ElvenBot - MD • Official Channel 』'
+global.namegrupo = '『 ElvenBot - MD • Official Group 』'
+global.namecomu = 'GX Community'
+global.namecomu2 = 'Cobra Tech Community'
+global.colab1 = 'Hardy'
+global.colab2 = 'GX'
+global.colab3 = 'Elven'
 
 //Reacciones De Comandos.!
 global.rwait = '🕒'
@@ -98,13 +98,13 @@ global.fkontak = { key: { participants:"0@s.whatsapp.net", "remoteJid": "status@
 
 // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
 
-global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363192435027853@newsletter', newsletterName: "『✯ Team Channel Ai Yaemori ✯』", serverMessageId: -1 }
+global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363323196108062@newsletter', newsletterName: "『 ElvenBot - MD • Official Channel 』", serverMessageId: -1 }
 }}, { quoted: m }
 
 global.icono = [ 
 'https://i.ibb.co/HGqYPbf/logo-color.png'
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363263466636910@newsletter", serverMessageId: 100, newsletterName: '『✯ Team Channel Ai Yaemori ✯』', }, externalAdReply: { showAdAttribution: true, title: packname, body: '©2024, by Aymane Touzani', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363323196108062@newsletter", serverMessageId: 100, newsletterName: '『 ElvenBot - MD • Official Channel 』', }, externalAdReply: { showAdAttribution: true, title: packname, body: '©2024, by Aymane Touzani', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
