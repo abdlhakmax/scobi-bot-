@@ -6,7 +6,7 @@ import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 
 var handler = async (m, { conn, command, args, text, usedPrefix }) => {
 
-if (!text) return conn.reply(m.chat, `🚩 *Ingrese el nombre de un video de YouTube*\n\nEjemplo, ${usedPrefix + command} Distancia - Kimberly Contreraxx`,  m, rcanal)
+if (!text) return conn.reply(m.chat, `🚩 *ادخل اسم الفيديو الذي تبحث عنه بعد الخاصية*\n\nمثال,\n ${usedPrefix + command} El Grande Toto - BLUE LOVE`,  m, rcanal)
 
 await m.react(rwait)
 
