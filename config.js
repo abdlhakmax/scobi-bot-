@@ -8,7 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 //FOR PAIRING USING 8 DIGITS CODE
-global.botnumber = '212778513302' //Example 212660131536
+global.botnumber = '' //Example 212660131536
 global.confirmCode = ''
 
 //• ↳ONLY OWNERS AND COLLABORATORS
@@ -23,7 +23,7 @@ global.suittag = ['212660131536']
 global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packname = '⪛ ElvenBot - 𝐌𝐃 ⪜'
+global.packname = 'ElvenBot - 𝐌𝐃'
 global.author = 'GX004 👑'
 global.wm = '✨◌*̥₊ ELVENBOT-MD ◌❐⚡༉'
 global.titulowm = 'ElvenBot-MD 🍟'
