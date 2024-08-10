@@ -37,7 +37,7 @@ await m.react(done)
 await m.react(error)
 return conn.reply(m.chat, '🚩 *حدث خطأ ما.*', m)}}
 
-handler.help = ['facebook', 'fb']
+handler.help = ['fb']
 handler.tags = ['download']
 handler.command = ['facebook', 'fb']
 
