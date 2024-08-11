@@ -10,57 +10,7 @@
 
 🍟 **`INSTALL USING TERMUX`**
 
-[`🚩 Click here to download termux`](https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file)
 
-> ENTER THIS COMMANDS ONE AFTER ONE:
-
-```bash
-termux-setup-storage
-```
-```bash
-apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
-```
-```bash
-git clone https://github.com/GX004/ElvenBot-MD && cd ElvenBot-MD
-```
-```bash
-yarn install && npm install
-```
-```bash
-npm start
-```
-
-🍟 **`ACTIVATE THE BOT ON TERMUX`**
-
-ENTER THIS COMMANDS ONE AFTER ONE:
-```bash
-cd
-```
-```bash
-cd ElvenBot-MD
-```
-```bash
-npm start
-```
-
-🚩 **`Scan QR Code`**
-```bash
-ENTER THIS COMMANDS ONE AFTER ONE:
-> cd ElvenBot-MD
-> rm -rf Storage/Session
-> npm start
-```
-
-🍟 **`ELVEN 24/7 (TERMUX)`**
-```bash
-termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
-```
-
-🚩 **`ACTUALIZAR LUFFY`**
-> Note : This command to update Elven - MD 
-```bash
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/GX004/ElvenBot-MD/master/update.sh | bash
-```
 
 > Warning Estos comandos solo funcionan para TERMUX, REPLIT, LINUX
 
@@ -77,17 +27,17 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 
 
 #### 🟢 ACTIVATE ON CODESPACES
-[`CREATE SERVER`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=HardGamersTEAM/ElvenBot-MD&ref=main&geo=UsEast)
+[`CREATE SERVER`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=GX004/ElvenBot-MD&ref=main&geo=UsEast)
 
-#### ⚡ ACRIVATE ON REPLIT
-[![`CREATE SERVER ON REPLIT`](https://repl.it/badge/github/HardGamersTEAM/ElvenBot-MD)](https://repl.it/github/HardGamersTEAM/ElvenBot-MD)
+#### ⚡ ACTIVATE ON REPLIT
+[![`CREATE SERVER ON REPLIT`](https://repl.it/badge/github/GX004/ElvenBot-MD)](https://repl.it/github/GX004/ElvenBot-MD)
 
 #### 🤍 ACTIVATE ON RENDER
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2HardGamersTEAM%ElvenBot-MD) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2GX004%ElvenBot-MD) 
 
 ---
 
-## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Group" width="45" height="43"> Bot Oficial ☄️
+## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=en" alt="Group" width="45" height="43"> Bot Oficial ☄️
 
 <a href="https://wa.me/212774265928?text=!menu"><img alt="Bot Oficial ☄️" src="https://img.shields.io/badge/Bot - Oficial-00FFFF?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
