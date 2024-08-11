@@ -1,10 +1,13 @@
-let handler = async (m, { args, conn }) => { 
-if (!args[0]) {
-return conn.reply(m.chat, '🍟 *يرجى ادخال الرابط بعد الخاصية*', m, rcanal)}
+const handler = async (m, { conn, text, command, usedPrefix }) => {
+    try {
+        if (!text) {
+            throw `يرحى اضافة السؤال بعد الخاصية\n\n*مثال* : ${usedPrefix + command} مرحبا`;
+        }
+      
   try {
-      const videoLink = "https://api.bk9.site/download/youtube";
-      const videoFileName = "video.mp4";
-      await conn.sendMessage(m.chat, { video: { url: videoLink }, fileName: videoFileName, mimetype: 'video/mp4', caption: 'bk9' }, { quoted: m });
+      const videoLink = "https://api.hardybot.site/api/v2/ytmp4?url=${text}&apikey=HardyBot";
+      const videoFileName = "ytmp4.mp4";
+      await conn.sendMessage(m.chat, { video: { url: videoLink }, fileName: videoFileName, mimetype: 'video/mp4', caption: '> © 2024, by GX004' }, { quoted: m });
   } catch (error) {
       console.error(error);
       throw "فشل في إرسال الفيديو.";
