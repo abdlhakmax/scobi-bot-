@@ -68,6 +68,6 @@ href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino
 <a
 href="https://github.com/GX004"><img src="https://github.com/GX004.png" width="130" height="130" alt="GX004"/></a>
 
-> Copyright (c) 2024 **[GX004](https://github.com/HardGamersTEAM/ElvenBot-MD)**.
+> Copyright © 2024, by **[GX004](https://github.com/HardGamersTEAM/ElvenBot-MD)**.
 
 **`THANKS FOR CHOOSING US!` 🍟**
