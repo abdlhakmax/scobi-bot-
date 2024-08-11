@@ -8,13 +8,6 @@
 
 ### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba El Bot Aqui" width="42" height="42"> TRY THE BOT HERE
 
-🍟 **`INSTALL USING TERMUX`**
-
-
-
-> Warning Estos comandos solo funcionan para TERMUX, REPLIT, LINUX
-
----
 
 #### ☂️ ACTIVATE ON HEROKU ☂️
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HardGamersTEAM/ElvenBot-MD)
