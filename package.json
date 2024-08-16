@@ -1,7 +1,7 @@
 {
-"name": "ElvenBot-MD",
+"name": "scobi-bot",
 "version": "1.0.0", 
-"description": "WhatsApp Bot Multi Device",
+"description": "بوت واتساب مغربي صنع ",
 "main": "index.js",
 "type": "module",
 
